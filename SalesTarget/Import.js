@@ -24,7 +24,7 @@ function createShopInstance(workbook){
 
   let range = XLSX.utils.decode_range(workbook.Sheets[workbook.SheetNames[0]]['!ref']);
 
-  let colNumbers = []; //取り込んだエクセルシート上における、[0]=>取引IDの、[1]=>売上の、[2]=>店舗の、[3]=>日付のカラムnumber、[4]=>取消区分（通常：0、取消：1）
+  let colNumbers = []; //取り込んだエクセルシート上における、[0]=>取引IDの、[1]=>売上の、[2]=>店舗の、[3]=>日付の、カラムnumber、[4]=>取消区分（通常：0、取消：1）
   for(let col=range.s.c; col<range.e.c; ++col){
 
     let adress = XLSX.utils.encode_cell({r:0, c:col});
