@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="salesTarget.css">
+    <title>Sales Target</title>
+</head>
+<body>
+
+    <div>
+
+        <table class="table" id="table">
+
+            <thead class="noneDisplay">
+                <tr><th colspan="15" class="space shopName"></th></tr>
+                <tr>
+                    <td class="space"></td><td class="space"></td><td class="space"></td><td class="space"></td><td class="space"></td><td class="space"></td><td class="space"></td>
+                    <td colspan="3"><p>客単価目標</p><input type="tel"></td>
+                    <td colspan="3"><p>客数予想</p><input type="tel"></td>
+                    <td><button onclick="calSalesTarget(event)">目標値をセット</button></td>
+                </tr>
+                <tr>
+                    <th class="lastyear"></th>
+                    <th>売上実績</th>
+                    <th>客数</th>
+                    <th>週売上</th>
+                    <th>天候</th>
+                    <th class="space"></th>
+                    <th class="thisYear"></th>
+                    <th>売上目標</th>
+                    <th>客数予想</th>
+                    <th>客単価目標</th>
+                    <th>～15時</th>
+                    <th>～17時</th>
+                    <th>～19時</th>
+                    <th>売上実績</th>
+                    <th>客数</th>
+                    <th>達成率</th>
+                    <th>天候</th>
+                </tr>
+            </thead>
+
+        </table>
+
+    </div>
+
+    <div id="tableContainer">
+        
+    </div>
+
+    <div id="dropZone">
+        <div id="message">Drop XLSXfile Here!</div>
+        <input type="file" value="drop here" accept=".xlsx" onchange="handleDrop(event)" multiple ondrop="handleDrop(event)">
+    </div>
+    
+
+    <input type="button" id="dlXlsx" value="download">
+
+    <input type="text" id="setYearMonth" placeholder="例:xxxx/1,xxxx/12（年月を入力）">
+    <button onclick="createTable()">クリック</button>
+
+    <div id="selectTermForCal">
+        <select name="selectYear" id="yearSelecter"></select>
+        <select name="selectMonth" id="monthSelecter">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+            <option value="11"></option>
+            <option value="12"></option>
+        </select>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
+    <script lang="javascript" src="calendar.js"></script>
+    <script lang="javascript" src="describe.js"></script>
+    <script lang="javascript" src="import.js"></script>
+    <script lang="javascript" src="export.js"></script>
+    <script lang="javascript" src="createTable.js"></script>
+    <script lang="javascript" src="calExpectedSales.js"></script>
+</body>
+</html>
