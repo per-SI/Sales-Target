@@ -13,7 +13,7 @@
 5.ひと月分の売上予測が算出される
 
 のようになっています。
-Sheet.js(https://github.com/SheetJS/sheetjs)を使用。
+Sheet.js (https://github.com/SheetJS/sheetjs) を使用。
 
 ## 使用するための条件
 読み込むエクセルシートに必要な条件（読み込むカラム名はimport.js(createShopInstance関数)で調整可能）
