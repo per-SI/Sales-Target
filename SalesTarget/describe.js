@@ -5,15 +5,15 @@ let shop = [nagoya,shimokita,minamisenba,harajuku,kyoto,kichijoji,popup,shinsaib
 let shopNameJap = ["サンプル１","サンプル２","サンプル３","サンプル４","サンプル５","サンプル６","サンプル７","サンプル８","サンプル９"];
 let shopNameEng = ["sample1","sample2","sample3","sample4","sample5","sample6","sample7","sample8","sample9"];
 const SPdays = {
-  "nagoya":7,
-  "shimokita":19,
-  "minamisenba":1,
-  "harajuku":28,
-  "kyoto":1,
-  "kichijoji":8,
-  "popup":0,
-  "shinsaibashi":28,
-  "kamakura":20
+  "sample1":7,
+  "sample2":19,
+  "sample3":1,
+  "sample4":28,
+  "sample5":1,
+  "sample6":8,
+  "sample7":0,
+  "sample8":28,
+  "sample9":20
 }
 
 
