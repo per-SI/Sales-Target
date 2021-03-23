@@ -1,7 +1,7 @@
 const $dropZone = document.getElementById('dropZone');
 
-let nagoya={}, shimokita={}, minamisenba={}, harajuku={}, kyoto={}, kichijoji={}, popup={}, shinsaibashi={}, kamakura={} ;
-let shop = [nagoya,shimokita,minamisenba,harajuku,kyoto,kichijoji,popup,shinsaibashi,kamakura] ;
+let sample1={}, sample2={}, sample3={}, sample4={}, sample5={}, sample6={}, sample7={}, sample8={}, sample9={} ;
+let shop = [sample1,sample2,sample3,sample4,sample5,sample6,sample7,sample8,sample9] ;
 let shopNameJap = ["サンプル１","サンプル２","サンプル３","サンプル４","サンプル５","サンプル６","サンプル７","サンプル８","サンプル９"];
 let shopNameEng = ["sample1","sample2","sample3","sample4","sample5","sample6","sample7","sample8","sample9"];
 const SPdays = {
