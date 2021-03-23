@@ -1,10 +1,9 @@
 const $dropZone = document.getElementById('dropZone');
-//const $table = document.getElementById('table');
 
 let nagoya={}, shimokita={}, minamisenba={}, harajuku={}, kyoto={}, kichijoji={}, popup={}, shinsaibashi={}, kamakura={} ;
 let shop = [nagoya,shimokita,minamisenba,harajuku,kyoto,kichijoji,popup,shinsaibashi,kamakura] ;
-let shopNameJap = ["名古屋","下北沢","南船場","原宿","京都","吉祥寺","POPUP","心斎橋","鎌倉"];
-let shopNameEng = ["nagoya","shimokita","minamisenba","harajuku","kyoto","kichijoji","popup","shinsaibashi","kamakura"];
+let shopNameJap = ["サンプル１","サンプル２","サンプル３","サンプル４","サンプル５","サンプル６","サンプル７","サンプル８","サンプル９"];
+let shopNameEng = ["sample1","sample2","sample3","sample4","sample5","sample6","sample7","sample8","sample9"];
 const SPdays = {
   "nagoya":7,
   "shimokita":19,
@@ -62,23 +61,4 @@ class transaction {
 店舗ごとの取引履歴インスタンスを作成する。
 1.取引履歴を取引IDをインデックスとして整理（同一IDはカウントしないように）→　for文の中でif判定
 2.店舗IDで分類していく
-
-クラス内関数
-・getDate関数
-・getSales関数
-
-名古屋と鎌倉だけ時間帯を別にする
-1.店舗で振り分ける
-2.時間帯で分ける（12～15、15～17、17～19）
-
-店舗ID
-１＝名古屋
-２＝下北沢
-３＝南船場
-４＝原宿
-５＝京都
-６＝吉祥寺
-７＝popup
-８＝心斎橋
-９＝鎌倉
 */
