@@ -25,7 +25,7 @@ function setSPHoliday(sName,td1,td2,lastyear,thisyear,month,date,DayOfnum1,DayOf
 
 document.addEventListener('DOMContentLoaded',async function(){
     try{
-        let api_key = "AIzaSyD7U939s1HROf7BQrA8yPi_i_6wzGtPD_A";
+        let api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
         let api_id = "ja.japanese#holiday@group.v.calendar.google.com";
         let startD = new Date();
         let endD = new Date();
